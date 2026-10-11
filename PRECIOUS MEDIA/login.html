@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Preshy Media Hub</title>
+
+    <link rel="stylesheet" href="pro.css">
+
+</head>
+
+
+<body class="movies-page">
+
+
+    <div class="login-container">
+
+
+        <div class="logo">
+            Preshy <span>Media Hub</span>
+        </div>
+
+
+        <h1>Welcome to Preshy Media Hub</h1>
+
+        <p>Login to continue</p>
+
+
+        <!-- LOGIN -->
+
+        <div id="loginForm">
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Password"
+            >
+
+            <p>
+                <a href="#" id="forgotPassword">
+                    Forgot Password?
+                </a>
+            </p>
+
+            <button id="loginBtn">
+                Login
+            </button>
+
+            <p id="loginMessage"></p>
+
+            <p>
+                Don't have an account?
+                <a href="#" id="showSignup">
+                    Sign Up
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- SIGN UP -->
+
+        <div id="signupForm" style="display:none;">
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Full Name"
+            >
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Email"
+            >
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Password"
+            >
+
+            <p class="password-info">
+                Password must contain at least 8 characters,
+                including uppercase, lowercase, number and
+                special character.
+            </p>
+
+            <button id="signupBtn">
+                Sign Up
+            </button>
+
+            <p id="signupMessage"></p>
+
+            <p>
+                Already have an account?
+                <a href="#" id="showLogin">
+                    Login
+                </a>
+            </p>
+
+        </div>
+
+
+        <!-- FORGOT PASSWORD -->
+
+        <div id="forgotForm" style="display:none;">
+
+            <h2>Reset Password</h2>
+
+            <p>
+                Enter your registered email to reset your password.
+            </p>
+
+            <input
+                type="email"
+                id="forgotEmail"
+                placeholder="Registered Email"
+            >
+
+            <input
+                type="password"
+                id="newPassword"
+                placeholder="New Password"
+            >
+
+            <p class="password-info">
+                Password must contain at least 8 characters,
+                including uppercase, lowercase, number and
+                special character.
+            </p>
+
+            <button id="resetPasswordBtn">
+                Reset Password
+            </button>
+
+            <p id="forgotMessage"></p>
+
+            <p>
+                Remember your password?
+                <a href="#" id="backToLogin">
+                    Login
+                </a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="pro.js"></script>
+
+</body>
+
+</html>

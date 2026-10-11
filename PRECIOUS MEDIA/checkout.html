@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Preshy Media Hub</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>Preshy <span>Media Hub</span></h2>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="audio.html">Audio</a>
+            <a href="books.html">Books</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <main class="checkout-container">
+        <h1>Checkout 🛒</h1>
+        <p>Review your order before payment.</p>
+
+        <div class="checkout-card">
+            <h2>Order Summary</h2>
+
+            <div id="checkoutItems">
+                Your cart items will appear here.
+            </div>
+
+            <h3>Total: <span id="checkoutTotal">₦0.00</span></h3>
+
+            <h2>Payment Details</h2>
+
+            <form id="checkoutForm">
+                <label for="customerName">Full Name</label>
+                <input type="text" id="customerName"
+                    placeholder="Enter your full name" required>
+
+                <label for="customerEmail">Email Address</label>
+                <input type="email" id="customerEmail"
+                    placeholder="Enter your email" required>
+
+                <label for="paymentMethod">Payment Method</label>
+                <select id="paymentMethod" required>
+                    <option value="">Choose payment method</option>
+                    <option value="demo">Demo Payment</option>
+                </select>
+
+                <button type="submit">Proceed to Payment</button>
+            </form>
+
+            <p id="paymentMessage"></p>
+        </div>
+    </main>
+
+    <script src="pro.js"></script>
+</body>
+</html>

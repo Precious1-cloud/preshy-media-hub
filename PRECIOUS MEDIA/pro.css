@@ -1,0 +1,1288 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    padding: 20px 6%;
+    background: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    font-weight: bolder;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: bolder;
+    color: #5340c0;
+}
+
+.navbar nav{
+    display: flex;
+    gap: 40px;
+}
+.navbar nav a{
+    color: #f2f0f7;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar nav a:hover{
+    color: #5340c0;
+}
+
+.login-btn{
+    text-decoration: none;
+    background: #5340c0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bolder;
+}
+
+
+.hero{
+    /* min-height: 600px; */
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(
+        rgba(106, 90, 212, 0.85),
+        rgba(0, 0, 0, 0.95)
+    );
+}
+
+.hero h1{
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h2{
+    font-size: 15px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+
+.hero p{
+ font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: white;   
+    font-weight: bold;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 30px;
+}
+/* .logo span{
+    color: rgb(139, 134, 134);
+} */
+
+.btn{
+    display: inline-block;
+    padding: 15px 27px;
+    background: white;
+    color: #5340c0;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.secondary-btn{
+    background: #8b7fd6;
+    color: white;
+}
+
+.primary-btn{
+     background: #8b7fd6;
+    color: white;
+}
+
+.tertiary-btn{
+     background: #8b7fd6;
+    color: white;
+}
+
+.cathegories{
+    padding: 70px 8%;
+}
+
+.cathegories h2{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.cathegory-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cathegory-card h3{
+font-size: 45px;
+margin-bottom: 15px;    
+}
+
+.cathegory-card p{
+    color: white;
+    line-height: 1.6;
+   margin-bottom: 20px;
+}
+
+.cathegory-card a{
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+ padding: 12px 6%;
+ background: #8b7fd6;
+    color: white;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width: 900px){
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero h1{
+        font-size: 42px;
+    }
+     .hero h2{
+        font-size: 10px;
+    }
+    .cathegory-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px){
+.hero{
+    padding: 60px 6%;
+}
+
+.hero h1{
+    font-size: 36px;
+}
+.hero h1{
+    font-size: 8px;
+}
+
+.hero-buttons{
+    flex-direction: column;
+}
+.btn{
+    text-align: center;
+}
+}
+
+.movies-page{
+    background: linear-gradient( to bottom,
+        #9488da -20%,
+        #0d0b1a 90%);
+        
+        min-height: 100vh;
+        background-attachment: fixed;
+}
+.page header{
+    text-align: center;
+    padding: 60px 20px 30px;
+
+}
+.page header h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.page header p{
+    color: #5340c0;
+    font-size: 17px;
+}
+
+.movie-search{
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.movie-search input{
+    width: 400px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+.movie-search button{
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+}
+
+.movies-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+}
+footer{
+    margin-top: 20%;
+}
+
+.page-header p{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.page-header h1{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.content-section{
+    padding: 40px 5%;
+}
+.content-section h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.media-row{
+    display: flex;
+  flex-wrap: wrap;
+    gap: 20px;
+}
+
+.media-card{
+    text-decoration: none;
+    width: 160px;
+    flex-shrink: 0;
+}
+
+.media-card img{
+    width: 160px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.media-card h3{
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.media-card p{
+    margin-top: 5px;
+    color: #aaa;
+}
+
+.foot{
+    margin-top: 6%;
+}
+
+.foots{
+    margin-top: 3%;
+}
+
+.chioma h3{
+    align-items: baseline;
+    text-align: left;
+    font-size: 25px;
+    margin-left: 25px;
+}
+.chioma h2{
+    margin-top: 20px;
+}
+
+.chioma{
+    display: flex;
+}
+.chioma a{
+    margin-top: 10%;
+}
+.chioma img{
+    padding-right: 80px;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    gap: 10%;
+    align-items: left;
+}
+
+
+#moviesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 5%;
+}
+
+#moviesContainer .media-card {
+    width: 160px;
+    text-decoration: none;
+}
+
+#moviesContainer .media-card img {
+    width: 160px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+#moviesContainer .media-card h3 {
+    margin-top: 8px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+
+/* MAKE AUDIO CARDS NEAT */
+
+#audioContainer .media-card {
+    width: 160px;
+    min-width: 0;
+}
+
+#audioContainer .media-card h3 {
+    font-size: 14px;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+}
+
+#audioContainer .media-card p {
+    font-size: 13px;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+    color: #aaa;
+}
+
+#audioContainer .media-card audio {
+    width: 160px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+
+
+
+#booksContainer,
+#audioContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 30px 5%;
+}
+
+#booksContainer .media-card,
+#audioContainer .media-card {
+    width: 160px;
+}
+
+
+
+/* LOGIN PAGE */
+
+.login-container {
+    width: 400px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #1a1730;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.login-container .logo {
+    margin-bottom: 25px;
+}
+
+.login-container h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.login-container > p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #5340c0;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.login-container button:hover {
+    background: #6b56df;
+}
+
+.login-container p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.login-container a {
+    color: #8b7fd6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+#loginMessage,
+#signupMessage {
+    margin-bottom: 15px;
+    color: #f87171;
+}
+
+
+
+
+
+body.movies-page {
+    background: linear-gradient(
+        to bottom,
+        #3d326f 0%,
+        #17132b 45%,
+        #0d0b1a 100%
+    );
+}
+
+.hero {
+    background: transparent;
+}
+
+.cathegories {
+    background: transparent !important;
+}
+
+
+
+
+/* IMPROVE HOME HERO */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #a99bea;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+
+
+
+.cathegories {
+    padding: 70px 8%;
+}
+
+.cathegories h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.cathegory-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.cathegory-card {
+    background: rgba(83, 64, 192, 0.25);
+    border: 1px solid rgba(139, 127, 214, 0.4);
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.cathegory-card:hover {
+    transform: translateY(-8px);
+    background: rgba(83, 64, 192, 0.4);
+}
+
+.cathegory-card h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.cathegory-card p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.cathegory-card a {
+    margin-top: 20px;
+}
+
+
+
+/* HOME MOBILE */
+@media (max-width: 700px) {
+
+    .cathegory-container {
+        grid-template-columns: 1fr;
+    }
+
+    .cathegories h2 {
+        font-size: 30px;
+    }
+
+    .cathegory-card {
+        padding: 25px;
+    }
+
+}
+
+
+
+/* THREE DOT MOVIE MENU */
+
+.media-card {
+    position: relative;
+}
+
+.media-card > a {
+    text-decoration: none;
+    color: white;
+}
+
+.three-dot-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.75);
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+.card-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 45px;
+    right: 5px;
+
+    width: 180px;
+
+    background: #1a1730;
+
+    border-radius: 10px;
+
+    padding: 8px;
+
+    z-index: 20;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card-menu.show {
+    display: block;
+}
+
+.card-menu button {
+    width: 100%;
+
+    padding: 10px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    border-radius: 6px;
+}
+
+.card-menu button:hover {
+    background: #5340c0;
+}
+
+
+
+
+
+#favoritesContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    gap: 30px 20px;
+    padding: 30px 5%;
+}
+
+#favoritesContainer .media-card {
+    width: 160px;
+}
+
+
+/* CART THREE DOT MENU */
+
+#cartContainer .media-card {
+    position: relative;
+}
+
+#cartContainer .three-dot-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    z-index: 10;
+}
+
+#cartContainer .cart-menu {
+    display: none;
+
+    position: absolute;
+    top: 45px;
+    right: 5px;
+
+    width: 150px;
+
+    background: #1a1730;
+    border-radius: 10px;
+    padding: 8px;
+
+    z-index: 20;
+}
+
+#cartContainer .cart-menu.show {
+    display: block;
+}
+
+#cartContainer .cart-menu button {
+    width: 100%;
+    padding: 10px;
+
+    border: none;
+    background: transparent;
+    color: white;
+
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#cartContainer .cart-menu button:hover {
+    background: #5340c0;
+}
+
+
+
+
+#cartContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 160px);
+    gap: 30px 20px;
+    padding: 30px 5%;
+}
+
+#cartContainer .media-card {
+    width: 160px;
+    position: relative;
+}
+
+
+
+
+
+
+/* FAVORITES THREE-DOT MENU */
+
+#favoritesContainer .media-card {
+    position: relative;
+}
+
+#favoritesContainer .three-dot-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+#favoritesContainer .favorite-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 5px;
+    width: 190px;
+    background: #1a1730;
+    border-radius: 10px;
+    padding: 8px;
+    z-index: 20;
+}
+
+#favoritesContainer .favorite-menu.show {
+    display: block;
+}
+
+#favoritesContainer .favorite-menu button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+#favoritesContainer .favorite-menu button:hover {
+    background: #5340c0;
+}
+
+
+
+
+/* PROFILE PAGE */
+
+.profile-container {
+    min-height: 80vh;
+    padding: 35px 20px 60px;
+    text-align: center;
+    color: #F2F0F7;
+    background: linear-gradient(135deg, #1A1730, #0D0B1A);
+}
+
+.profile-container h1 {
+    font-size: 30px;
+    margin: 10px 0 35px;
+    color: #F5A623;
+}
+
+.profile-card {
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 30px 25px;
+    background: linear-gradient(145deg, #24203F, #151226);
+    border: 1px solid rgba(139, 127, 214, 0.6);
+    border-radius: 22px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(83, 64, 192, 0.2);
+}
+
+.profile-avatar {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    background: linear-gradient(135deg, #8B7FD6, #5340c0);
+    border: 3px solid #F5A623;
+    border-radius: 50%;
+}
+
+.profile-card h2 {
+    font-size: 23px;
+    color: #F5A623;
+    margin: 15px 0 10px;
+    overflow-wrap: anywhere;
+}
+
+.profile-card p {
+    font-size: 14px;
+    color: #C0BADB;
+    margin-bottom: 25px;
+    overflow-wrap: anywhere;
+}
+
+.profile-card button {
+    padding: 11px 30px;
+    background: linear-gradient(135deg, #8B7FD6, #5340c0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-card button:hover {
+    background: #F5A623;
+    color: #0D0B1A;
+    transform: scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .profile-container h1 {
+        font-size: 25px;
+    }
+
+    .profile-card {
+        padding: 25px 18px;
+    }
+}
+
+
+
+
+/* PROFILE LAYOUT FIX */
+
+.profile-card {
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 90%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+}
+
+.profile-avatar {
+    margin: 0 auto 24px;
+    flex-shrink: 0;
+}
+
+.profile-card p {
+    text-align: left;
+    font-size: 14px;
+    margin: 12px 0 5px;
+    color: #B9B1E8;
+}
+
+.profile-card h2 {
+    text-align: left;
+    font-size: 19px;
+    margin: 0 0 12px;
+    padding: 12px;
+    background: #0D0B1A;
+    border: 1px solid #30284F;
+    border-radius: 8px;
+    color: #F2F0F7;
+}
+
+.profile-card h3 {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    overflow-wrap: anywhere;
+    margin: 0 0 22px;
+    padding: 12px;
+    background: #0D0B1A;
+    border: 1px solid #30284F;
+    border-radius: 8px;
+    color: #F2F0F7;
+}
+
+.profile-card button {
+    align-self: center;
+    min-width: 150px;
+    margin-top: 8px;
+}
+
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 22px;
+    }
+}
+
+
+
+
+/* COMPACT PROFILE PAGE */
+
+.profile-container {
+    min-height: 0;
+    padding: 12px 15px 20px;
+}
+
+.profile-container h1 {
+    font-size: 24px;
+    margin: 5px 0 15px;
+}
+
+.profile-card {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 340px;
+    padding: 16px 22px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.profile-avatar {
+    width: 58px;
+    height: 58px;
+    font-size: 30px;
+    margin: 0 auto 10px;
+    border-width: 2px;
+}
+
+.profile-card p {
+    font-size: 12px;
+    margin: 7px 0 3px;
+}
+
+.profile-card h2 {
+    font-size: 15px;
+    padding: 7px 9px;
+    margin: 0 0 7px;
+}
+
+.profile-card h3 {
+    font-size: 13px;
+    padding: 7px 9px;
+    margin: 0 0 10px;
+}
+
+.profile-card button {
+    font-size: 13px;
+    padding: 8px 22px;
+    min-width: 110px;
+    margin-top: 3px;
+}
+
+@media (max-height: 750px) {
+    .profile-container {
+        padding-top: 8px;
+        padding-bottom: 10px;
+    }
+
+    .profile-container h1 {
+        margin-bottom: 10px;
+    }
+
+    .profile-card {
+        padding: 12px 20px;
+    }
+
+    .profile-avatar {
+        width: 48px;
+        height: 48px;
+        font-size: 25px;
+        margin-bottom: 7px;
+    }
+}
+
+
+
+
+/* PROFILE SIZE ADJUSTMENT */
+
+.profile-container {
+    padding: 18px 15px 20px;
+}
+
+.profile-container h1 {
+    font-size: 27px;
+    margin: 8px 0 17px;
+}
+
+.profile-card {
+    max-width: 370px;
+    padding: 20px 24px;
+}
+
+.profile-avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.profile-card p {
+    font-size: 13px;
+    margin: 8px 0 4px;
+}
+
+.profile-card h2 {
+    font-size: 17px;
+    padding: 9px 10px;
+    margin-bottom: 9px;
+}
+
+.profile-card h3 {
+    font-size: 14px;
+    padding: 9px 10px;
+    margin-bottom: 12px;
+}
+
+.profile-card button {
+    font-size: 14px;
+    padding: 9px 25px;
+    min-width: 125px;
+}
+
+
+
+
+
+/* CHECKOUT PAGE */
+
+.checkout-container {
+    min-height: 80vh;
+    padding: 30px 20px 45px;
+    background: linear-gradient(to bottom, #1A1730, #0D0B1A);
+    color: #F2F0F7;
+    text-align: center;
+}
+
+.checkout-container h1 {
+    color: #F5A623;
+    font-size: 30px;
+    margin: 5px 0 10px;
+}
+
+.checkout-container > p {
+    color: #9490B0;
+    margin-bottom: 25px;
+}
+
+.checkout-card {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 25px;
+    text-align: left;
+    background: #1A1730;
+    border: 1px solid #5340c0;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.checkout-card h2 {
+    color: #F5A623;
+    font-size: 20px;
+    margin: 0 0 18px;
+}
+
+#checkoutItems {
+    color: #F2F0F7;
+    padding: 12px;
+    margin-bottom: 18px;
+    background: #0D0B1A;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+#checkoutTotal {
+    color: #4ADE80;
+}
+
+.checkout-card h3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 0;
+    margin: 0 0 25px;
+    border-bottom: 1px solid #393252;
+}
+
+#checkoutForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#checkoutForm label {
+    color: #C0BADB;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#checkoutForm input,
+#checkoutForm select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    background: #0D0B1A;
+    color: #F2F0F7;
+    border: 1px solid #5340c0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+#checkoutForm input:focus,
+#checkoutForm select:focus {
+    border-color: #F5A623;
+}
+
+#checkoutForm button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #8B7FD6, #5340c0);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#checkoutForm button:hover {
+    background: #F5A623;
+    color: #0D0B1A;
+}
+
+#paymentMessage {
+    margin-top: 15px;
+    color: #4ADE80;
+    overflow-wrap: anywhere;
+}
+
+.checkout-btn {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 12px 20px;
+    background: #5340c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.checkout-btn:hover {
+    background: #F5A623;
+    color: #0D0B1A;
+}
+
+@media (max-width: 600px) {
+    .checkout-container {
+        padding: 22px 12px 30px;
+    }
+
+    .checkout-container h1 {
+        font-size: 25px;
+    }
+
+    .checkout-card {
+        padding: 18px;
+    }
+}
